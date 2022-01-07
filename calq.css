@@ -1,0 +1,47 @@
+body {
+    background-color: tomato;
+    
+}
+
+
+.text-design{
+    text-align: center;
+    font-size:50px;
+}
+
+.box-shape {
+    height: 300px;
+    width: 400 px;
+    background-color:rgba(41, 2, 148, 0.07);
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    border-radius: 10px;
+    border: 2px solid rgba(194, 162, 162, 0.904);
+    box-shadow: 0 0 40px rgba(90, 105, 102, 0.6);
+    padding: 50px 35px;
+}
+
+#display {
+    
+    height: 50px;
+    width: 95%;
+    background: rgba(153, 98, 15, 0.15);
+    border-radius: 3px;
+    padding: 0 10px;
+    font-size: 14px;
+    text-align: right;
+ }
+
+ .button {
+    width: 42px;
+    height: 42px;
+    background: rgba(76, 2, 250, 0.15);
+    border-radius: 3px;
+    border-color: green;
+    font-size: 14px;
+    font-weight: 300;
+    margin: 16px 13px 0 0 ;
+    box-shadow: yellowgreen;
+    border-width: 1px;
+}
