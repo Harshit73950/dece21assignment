@@ -1,0 +1,102 @@
+body{
+    margin: 0%;
+    padding: 0%;
+}
+#head1{
+    background-color: khaki;
+    margin: 0%;
+    height: 12%;
+    width: 100%;
+}
+#body1{
+    position: relative;
+    margin: 0%;
+    height: 100%;
+    width: 100%;
+    
+}
+#logo{
+    height: 1.5cm;
+    width: 5cm;
+    margin: 10px 10px 10px 10px;
+    float: left;
+
+}
+h1{
+    
+    position: absolute;
+    top: 0;
+    left: 0%;
+    color: lavender;
+}
+#pic{
+    height: 100%;
+    width: 100%;  
+}
+.link{
+    left: 760px;
+    position: relative;
+    float: left;
+    display: inline;
+   padding: 40px;
+   padding-top: 10px;
+    
+
+    margin-top: 30px;
+}
+p{
+    position: absolute;
+    color: lightcyan;
+    top: 90px;
+    leftbody{
+    margin: 0%;
+    padding: 0%;
+}
+#head1{
+    background-color: khaki;
+    margin: 0%;
+    height: 12%;
+    width: 100%;
+}
+#body1{
+    position: relative;
+    margin: 0%;
+    height: 100%;
+    width: 100%;
+    
+}
+#logo{
+    height: 1.5cm;
+    width: 5cm;
+    margin: 10px 10px 10px 10px;
+    float: left;
+
+}
+h1{
+    
+    position: absolute;
+    top: 0;
+    left: 0%;
+    color: lavender;
+}
+#pic{
+    height: 100%;
+    width: 100%;  
+}
+.link{
+    left: 760px;
+    position: relative;
+    float: left;
+    display: inline;
+   padding: 40px;
+   padding-top: 10px;
+    
+
+    margin-top: 30px;
+}
+p{
+    position: absolute;
+    color: lightcyan;
+    top: 90px;
+    left:0%
+}
