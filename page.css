@@ -1,0 +1,29 @@
+.para{
+    background-color: tomato;
+    border: 12px double black;
+    border-left: 8px solid forestgreen;
+    border-right: 8px mediumspringgreen;
+    border-radius: 5px;
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px; 
+}
+
+body{
+    /* border: 10px double brown; */
+    /* border: 2px  solid green;  */
+}
+p{
+    padding: 39px;
+}
+h1{
+    text-align: center;
+    g {
+        margin: 0;
+        padding: 0;
+        border: none;
+        outline: none;
+        list-style: none;
+        text-decor
+}
