@@ -1,0 +1,100 @@
+body{
+    margin: 0px;
+   
+}
+h2{
+    margin-left: 250px;
+    position: relative;
+    top: 35px;
+    
+    
+}
+.menu{
+    text-decoration: none;
+    color: black;
+}
+#main{
+    padding-left: 450;
+   word-spacing: 80px;
+  
+}
+#color{
+    text-decoration: none;
+    color: whites;
+    border: 1;
+    border-style: solid;
+    background-color: whitesmoke;
+    width: 70px;
+    height: 45px;
+    margin-left: 130px;
+}
+#border{
+    background-color: white;
+    border: 1 solid rgb(255, 255, 255);
+    text-decoration: none;
+    width: 70px;
+    height: 85px;
+}
+#background{
+    background-color: rgb(161, 162, 180); 
+    position: fixed;
+    width: 1500px;  
+    height: 100px;
+}
+#banner{
+    background-image: url("https://cdn.gobankingrates.com/wp-content/uploads/2019/07/Beautiful-luxury-home-exterior-iStock-1054759884.jpg");
+    background-image: url(/html/body/c-wiz/div/div[2]/div/div[2]/c-wiz/c-wiz/div[1]/div[2]/div/div[4]/div/div[2]/div/div[1]/img);
+    height: 100px; 
+    width: auto;
+    padding-top: 100px;
+   
+    
+}
+#align{
+    text-align: left;
+    padding-top: 300px;
+}
+#style{
+    margin-left: 510px;
+    
+}
+button,input:active{
+    background-color: darkblue;
+}
+a:hover{
+    font-size: large;
+}
+#designs{
+    padding-left: 420px;
+    margin-bottom: 30px;
+
+}
+.first{
+    width: 300px;
+    height: 300px;
+    margin-left: 50px;
+    border: 2px;
+    border-style: solid;
+    border-radius: 50px;
+    border-color: lightpink;
+
+}
+
+
+h4{
+    margin-left: 150px;
+}
+#foot{
+    background-color: lightpink;
+}
+#social{
+    word-spacing: 40px;
+    margin-left: 60px;
+    font-size: x-large;
+}
+
+
+    
+    
+    
+    
