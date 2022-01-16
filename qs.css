@@ -1,0 +1,85 @@
+ody{
+    margin: 20px;
+}
+header{
+    background-color: turquoise;
+    height: 40px;
+    text-align: center;
+}
+.parent{
+    display: flex;
+    flex-flow: row;
+}
+.aside1{
+    background-color: oldlace;
+    height: 200px;
+    width: 30%;
+    text-align: center;
+}
+.mid{
+    background-color: magenta;
+    height: 200px;
+}
+.aside2{
+    background-color: pink;
+    height: 200px;
+    width: 30%;
+    text-align: center;
+}
+footer{
+    margin-top: -19px;
+    background-color: rgb(126, 146, 126);
+    height: 60px;
+    text-align: center;
+}
+@media (max-width:800px){
+    .parent{
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .aside1{
+        background-color: rgb(0, 140, 255);
+        height: 50px;
+        width: 50%;
+        text-align: center;
+        order: 2;
+    }
+    .mid{
+        background-color: skyblue;
+        height: 200px;
+        order: 1;
+    }
+    .aside2{
+        background-color: rgb(148, 120, 124);
+        height: 50px;
+        width: 50%;
+        text-align: center;
+        order: 3;
+    }
+}
+@media (max-width:600px){
+    .parent{
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .aside1{
+        background-color: yellow;
+        height: 50px;
+        width: 100%;
+        text-align: center;
+        order: 2;
+    }
+    .mid{
+        background-color: skyblue;
+        height: 200px;
+        order: 1;
+        overflow: scroll;
+    }
+    .aside2{
+        background-color: pink;
+        height: 50px;
+        width: 100%;
+        text-align: center;
+        order: 3;
+    }
+}
