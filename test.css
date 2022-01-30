@@ -1,0 +1,31 @@
+h1{
+    text-align:center;
+}
+/* 
+body{
+    background-color:#467746;
+    box-sizing: border-box;
+} */
+.university-item,
+  .input-form {
+    display: flex;
+    justify-content: space-between;
+  }
+table{
+   position: relative;
+   /* left: 25rem; */
+    background-color: rgb(139, 202, 160);
+    border: 1px solid;
+   
+}
+
+table  td{
+    border:1px solid;
+    padding: 10px;
+}
+
+table tr{
+    border:1px solid;
+    padding: 10px;
+}
+
