@@ -1,62 +1,100 @@
-window.addEventListener('load', () => {
-	const form = document.querySelector("#new-task-form");
-	const input = document.querySelector("#new-task-input");
-	const list_el = document.querySelector("#tasks");
+var sessAdd = document.getElementById('session+');
+var sessSub = document.getElementById('session-');
+var breakAdd = document.getElementById('break+');
+var breakSub = document.getElementById('break-');
+var start = document.getElementById('start');
+var reset = document.getElementById('reset');
 
-	form.addEventListener('submit', (e) => {
-		e.preventDefault();
+// Session time block
+sessAdd.addEventListener('click', increaseTime);
+sessSub.addEventListener('click', decreaseTime);
+var sTime = 0;
+function increaseTime() {
+    sTime += 1;
+    display();
+}
+function decreaseTime() {
+    if(sTime>0) {
+    sTime -= 1;
+    display();}
+}
+function display() {
+    console.log(sTime);
+    let sessTime = document.getElementById("sessTime");
+    sessTime.innerText = sTime;
+}
 
-		const task = input.value;
+//break time block
+breakAdd.addEventListener('click', increaseBreakTime);
+breakSub.addEventListener('click', decreaseBreakTime);
+var bTime = 0;
+function increaseBreakTime() {
+    bTime += 1;
+    displayBreak();
+}
+function decreaseBreakTime() {
+    if(bTime>0) {
+    bTime -= 1;
+    displayBreak();}
+}
+function displayBreak() {
+    console.log(bTime);
+    let breakTime = document.getElementById("breakTime");
+    breakTime.innerText = bTime;
+}
 
-		const task_el = document.createElement('div');
-		task_el.classList.add('task');
+// Start time block
+start.addEventListener('click',displayCounter);
+var counter_second = 0;
+var counter_minute = 0;
+function displayCounter() {
+    // console.log('display');
+    // if(start.innerText =='Start') {
+    //     start.innerText = 'Pause';
+    //     setInterval(function() {timer();},1000);
+    // }
+    // else {
+    //     start.innerText = 'Start';
+    //     clearInterval();
+    // }
+    
+    let period = document.getElementById('period');
+    
+    setInterval(function() {
+        if (sTime<counter_minute) {
+            counter_second = 0;
+            counter_minute = 0;
+            period.innerText = 'break!'
+            timer();
+        }
+        else {
+            period.innerText = 'Session';
+            timer();
+        }
+    }
+    ,1000);
+    
+}
 
-		const task_content_el = document.createElement('div');
-		task_content_el.classList.add('content');
+// Timer count block
 
-		task_el.appendChild(task_content_el);
-
-		const task_input_el = document.createElement('input');
-		task_input_el.classList.add('text');
-		task_input_el.type = 'text';
-		task_input_el.value = task;
-		task_input_el.setAttribute('readonly', 'readonly');
-
-		task_content_el.appendChild(task_input_el);
-
-		const task_actions_el = document.createElement('div');
-		task_actions_el.classList.add('actions');
-		
-		const task_edit_el = document.createElement('button');
-		task_edit_el.classList.add('edit');
-		task_edit_el.innerText = 'Edit';
-
-		const task_delete_el = document.createElement('button');
-		task_delete_el.classList.add('delete');
-		task_delete_el.innerText = 'Delete';
-
-		task_actions_el.appendChild(task_edit_el);
-		task_actions_el.appendChild(task_delete_el);
-
-		task_el.appendChild(task_actions_el);
-
-		list_el.appendChild(task_el);
-
-		input.value = '';
-
-		task_edit_el.addEventListener('click', (e) => {
-			if (task_edit_el.innerText.toLowerCase() == "edit") {
-				task_edit_el.innerText = "Save";
-				task_input_el.removeAttribute("readonly");
-				task_input_el.focus();
-			} else {
-				task_edit_el.innerText = "Edit";
-				task_input_el.setAttribute("readonly", "readonly");
-			}
-		});
-
-		task_delete_el.addEventListener('click', (e) => {
-			list_el.removeChild(task_el);
-		});
-	});
-});
+function timer() {
+    counter_second = counter_second + 1;
+    if(counter_second > 59) {
+        counter_second = 0;
+        counter_minute += 1;
+        if (counter_minute<10) {
+        document.getElementById('minute').innerText = '0' + counter_minute;
+        document.getElementById('second').innerText = '0' + counter_second;
+        }
+        else
+        {
+        document.getElementById('minute').innerText = counter_minute;
+        document.getElementById('second').innerText = '0' + counter_second;
+        }
+    }
+    else if(counter_second<10)
+    document.getElementById('second').innerText = '0' + counter_second;
+    else
+    document.getElementById('second').innerText = counter_second;
+}
